@@ -38,13 +38,13 @@ class gameCanvas {
 
         //load the logo
         this.logoim = new Image();
-        this.logoim.src = "../imgs/logo.png";
+        this.logoim.src = "canvas5/imgs/logo.png";
 
         //load the score & ETC
         this.scoreboardim = new Image();
-        this.scoreboardim.src = '../imgs/score.png';
+        this.scoreboardim.src = 'canvas5/imgs/score.png';
         this.replayim = new Image();
-        this.replayim.src = '../imgs/start_end.png';
+        this.replayim.src = 'canvas5/imgs/start_end.png';
     }
     redraw() {
         //check collion and set hitflag
@@ -179,7 +179,7 @@ class gameCanvas {
 class birdy {
     constructor(src) {
         this.image = new Image();
-        this.image.src = '../imgs/bird.png';
+        this.image.src = 'canvas5/imgs/bird.png';
         this.newheight = 64/2;
         this.newwidth = 92/2;
         this.x = 220;
@@ -288,8 +288,8 @@ class birdy {
 
 
 function startGame() {
-    Game = new gameCanvas('../imgs/background.png', '../imgs/ground.png', '../imgs/pipebottom.png', '../imgs/pipetop.png');
-    flappyBird = new birdy('../imgs/bird.png');
+    Game = new gameCanvas('canvas5/imgs/background.png', 'canvas5/imgs/ground.png', 'canvas/imgs/pipebottom.png', 'canvas5/imgs/pipetop.png');
+    flappyBird = new birdy('canvas5/imgs/bird.png');
     console.log("Starting...");
     canvas = document.getElementById("TC");
     canvas.width = 480;
